@@ -1,36 +1,24 @@
-# Node modules
-/node_modules/
-
-# Build output
-/build/
-/dist/
-
-# Dependency directories
-/npm-debug.log
-/yarn-debug.log
-/yarn-error.log
-
-# Environment variables
-.env
-
 # Logs
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# OS-specific files
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
-
-# IDE/Editor folders (example for VS Code)
-.vscode/
-
-# Package-lock and yarn lock files (optional)
-package-lock.json
-yarn.lock
-
-# Coverage directory (for testing)
-/coverage/
-
-# Appwrite or other cloud service configuration files (example)
-.appwrite/
-
-# Sentry
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
