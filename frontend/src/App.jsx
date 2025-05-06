@@ -1,14 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AdminLayout from './Pages/admin/AdminLayout';
+
+
 
 const App = () => {
   return (
-    <div>
-    
-    
-    <h1 className='text-2xl text-purple-700'>Hello</h1>
-    </div>
-    
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<AdminLayout/>} />
+       
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
